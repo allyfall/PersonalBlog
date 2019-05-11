@@ -1,5 +1,17 @@
 // google font should go here.
 //use the @import line from google fonts
 //need to pick colors and fonts
-$bgColor: bisque;
-$acColor:maroon;
+$bgColor1: bisque;
+// $acColor:white;
+
+
+/* Color Theme Swatches in RGBA */
+$tyellow: rgba(242, 211, 121, 1);
+$acColor: rgba(242, 226, 196, 1); 
+// $bgColor: rgba(242, 181, 106, .8); 
+// $bgColor: rgba(216, 139, 95, 1); 
+$bgColor: rgba(89, 25, 10, .8); 
+
+//fonts
+$monospace:monospace;
+

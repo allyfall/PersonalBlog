@@ -1,12 +1,20 @@
+body{
+	background-color: $acColor;
+}
+
 p{
 	font-family: monospace;
 	color:$acColor;
-	background-color: $bgColor;
+	// background-color: $bgColor;
 }
 li{
 	display: inline-block;
 	padding:3%;
 	text-align: center;
+	color:$bgColor;
+}
+footer li{
+	color:$acColor;
 }
 ul{
 	margin-left: 25%;
@@ -19,6 +27,13 @@ ul{
 h1{
 	margin-left: 15%;
 	font-family: cursive;
+	color:$bgColor;
+}
+nav{
+	li{
+		color:$bgColor;
+		background-color: $bgColor;
+	}
 }
 .gridbod{
 	display: grid;
@@ -39,6 +54,7 @@ h1{
 .stuff{
 	grid-area: stuff;
 	background:$bgColor;
+	color:$acColor;
 	margin:5%;
 	padding:2%;
 	h2{
@@ -49,16 +65,72 @@ h1{
 	grid-area: side;
 	background:$bgColor;
 	margin-right:2%;
+	color:$acColor;
 	h3{
 		text-align: center;	
 	}
 	p{
 		padding-left: 4%;
 	}
+	li{
+		display: block;
+		color:$acColor;
+	}
+	ul{
+		margin-left:0%;
+	}
 }
 .feet{
 	grid-area: feet;
+	color:$acColor;
 	ul{
-		margin-left:30%;
+		margin-left:23%;
+	}
+	font-size: .7em;
+	background-color: $bgColor;
+	border: double white 1px;
+}
+.thoughts{
+	section{
+		background-color: $acColor;
+		color:$bgColor;
+		border: double 2px $bgColor;
+		max-width: 60%;
+		margin-left:20%;
+	}
+	p{
+		color:$bgColor;
+		margin-left:4%;
+		margin-right: 4%;
+	}
+	li{
+		color:$bgColor;
+		display:block;
+		text-align: left;
+		list-style-type: square;
+		padding:0%;
+		margin:0%;
+		font-family: $monospace; 
+	}
+	ul{
+		margin:3%;
+	}
+	h2{
+		margin-left:4%;
+	}
+	h3{
+		margin-left:4%;
+	}
+	nav{
+		li{
+			// color:$bgColor;
+			// background-color:black;
+			display: inline-block;
+			text-align: right;
+			padding:3%;
+		}
+		ul{
+			margin-left:50%;
+		}
 	}
 }

@@ -337,6 +337,7 @@ template {
   display: none;
 }
 
+/* Color Theme Swatches in RGBA */
 /*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -422,16 +423,24 @@ textarea {
 /* ==========================================================================
   Author's custom styles
   ========================================================================== */
+body {
+  background-color: #f2e2c4;
+}
+
 p {
   font-family: monospace;
-  color: maroon;
-  background-color: bisque;
+  color: #f2e2c4;
 }
 
 li {
   display: inline-block;
   padding: 3%;
   text-align: center;
+  color: rgba(89, 25, 10, 0.8);
+}
+
+footer li {
+  color: #f2e2c4;
 }
 
 ul {
@@ -440,12 +449,18 @@ ul {
 ul a {
   text-decoration: none;
   font-family: serif;
-  color: maroon;
+  color: #f2e2c4;
 }
 
 h1 {
   margin-left: 15%;
   font-family: cursive;
+  color: rgba(89, 25, 10, 0.8);
+}
+
+nav li {
+  color: rgba(89, 25, 10, 0.8);
+  background-color: rgba(89, 25, 10, 0.8);
 }
 
 .gridbod {
@@ -465,7 +480,8 @@ h1 {
 
 .stuff {
   grid-area: stuff;
-  background: bisque;
+  background: rgba(89, 25, 10, 0.8);
+  color: #f2e2c4;
   margin: 5%;
   padding: 2%;
 }
@@ -475,8 +491,9 @@ h1 {
 
 .side {
   grid-area: side;
-  background: bisque;
+  background: rgba(89, 25, 10, 0.8);
   margin-right: 2%;
+  color: #f2e2c4;
 }
 .side h3 {
   text-align: center;
@@ -484,12 +501,62 @@ h1 {
 .side p {
   padding-left: 4%;
 }
+.side li {
+  display: block;
+  color: #f2e2c4;
+}
+.side ul {
+  margin-left: 0%;
+}
 
 .feet {
   grid-area: feet;
+  color: #f2e2c4;
+  font-size: .7em;
+  background-color: rgba(89, 25, 10, 0.8);
+  border: double white 1px;
 }
 .feet ul {
-  margin-left: 30%;
+  margin-left: 23%;
+}
+
+.thoughts section {
+  background-color: #f2e2c4;
+  color: rgba(89, 25, 10, 0.8);
+  border: double 2px rgba(89, 25, 10, 0.8);
+  max-width: 60%;
+  margin-left: 20%;
+}
+.thoughts p {
+  color: rgba(89, 25, 10, 0.8);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.thoughts li {
+  color: rgba(89, 25, 10, 0.8);
+  display: block;
+  text-align: left;
+  list-style-type: square;
+  padding: 0%;
+  margin: 0%;
+  font-family: monospace;
+}
+.thoughts ul {
+  margin: 3%;
+}
+.thoughts h2 {
+  margin-left: 4%;
+}
+.thoughts h3 {
+  margin-left: 4%;
+}
+.thoughts nav li {
+  display: inline-block;
+  text-align: right;
+  padding: 3%;
+}
+.thoughts nav ul {
+  margin-left: 50%;
 }
 
 /* ==========================================================================
