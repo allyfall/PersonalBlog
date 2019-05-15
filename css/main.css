@@ -465,7 +465,7 @@ nav li {
 
 .gridbod {
   display: grid;
-  grid-template-rows: 100px 400px 80px;
+  grid-template-rows: 100px 85% auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "upper upper navi navi" "stuff stuff stuff side" "feet feet feet feet";
 }
@@ -493,10 +493,14 @@ nav li {
   grid-area: side;
   background: rgba(89, 25, 10, 0.8);
   margin-right: 2%;
+  margin-bottom: 12%;
   color: #f2e2c4;
 }
-.side h3 {
+.side h2 {
   text-align: center;
+}
+.side h4 {
+  margin-left: 0%;
 }
 .side p {
   padding-left: 4%;
@@ -514,7 +518,6 @@ nav li {
   color: #f2e2c4;
   font-size: .7em;
   background-color: rgba(89, 25, 10, 0.8);
-  border: double white 1px;
 }
 .feet ul {
   margin-left: 23%;

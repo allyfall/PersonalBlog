@@ -37,7 +37,7 @@ nav{
 }
 .gridbod{
 	display: grid;
-	grid-template-rows: 100px 400px 80px;
+	grid-template-rows: 100px 85% auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas:
 		"upper upper navi navi"
@@ -65,9 +65,13 @@ nav{
 	grid-area: side;
 	background:$bgColor;
 	margin-right:2%;
+	margin-bottom:12%;
 	color:$acColor;
-	h3{
-		text-align: center;	
+	h2{
+		text-align: center;
+	}
+	h4{
+		margin-left:0%;	
 	}
 	p{
 		padding-left: 4%;
@@ -88,7 +92,8 @@ nav{
 	}
 	font-size: .7em;
 	background-color: $bgColor;
-	border: double white 1px;
+	// border: double white 1px;
+	// margin-top: 10%;
 }
 .thoughts{
 	section{
